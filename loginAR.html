@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل دخول أو اشتراك</title>
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-col">
+        <div class="btn-box">
+          <button class="btn btn-1" id="login">تسجيل دخول</button>
+          <button class="btn btn-2" id="register">اشتراك</button>
+        </div>
+
+        <!-- Login Form Container -->
+        <form action="" method="POST" class="form-box login-form">
+          <div class="form-title">
+            <span>تسجيل دخول</span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                name="Name"
+                class="inputs input-field"
+                placeholder="الاسم الكامل"
+                id="name"
+                required
+              />
+              <ion-icon name="person-outline" class="icon"></ion-icon>
+            </div>
+
+            <div class="input-box">
+              <input
+                type="password"
+                oninput="changeIcon(this.value)"
+                id="logPassword"
+                name="Password"
+                class="inputs input-field"
+                placeholder="الرمز السري"
+                required
+              />
+              <ion-icon
+                name="lock-closed-outline"
+                class="icon"
+                id="log-pass-icon"
+                onclick="myLogPassword()"
+              ></ion-icon>
+            </div>
+            <div class="forgot-pass">
+              <a aria-label="forgot-pass" href="forgot.html"
+                >هل نسيت الرمز السري ؟</a
+              >
+            </div>
+            <div class="input-box">
+              <button type="submit" name="submit" value="submit" id="submit" class="inputs submit-btn">
+                <span> تسجيل دخول</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+          <!-- <div class="social-login">
+            <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-google" class="social-login-icon"></ion-icon></a>
+                
+            </div>
+            <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-facebook" class="social-login-icon"></ion-icon></a>
+                
+            </div>
+            <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-twitter" class="social-login-icon"></ion-icon></a>
+                
+            </div>
+            <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-github" class="social-login-icon"></ion-icon></a>
+                
+            </div>           
+          </div> -->
+          <div class="lang">
+            <a aria-label="loginEN" href="loginEN.html"><span>English</span></a>
+            <a aria-label="loginAR" href="loginAR.html"><span>العربية</span></a>
+          </div>
+        </form>
+
+        <!-- REGISTER FORM CONTAINER -->
+        <form action="" method="POST" class="form-box register-form">
+          <div class="form-title">
+            <span>اشتراك</span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                name="Email"
+                class="inputs input-field"
+                placeholder="البريد الالكتروني"
+                id="email"
+                required
+              />
+              <ion-icon name="mail-outline" class="icon"></ion-icon>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                name="Name"
+                class="inputs input-field"
+                placeholder="الاسم الكامل"
+                id="name"
+                required
+              />
+              <ion-icon name="person-outline" class="icon"></ion-icon>
+            </div>
+
+            <div class="input-box">
+              <input
+                type="password"
+                oninput="changeIcon(this.value)"
+                id="regPassword"
+                name="Password"
+                class="inputs input-field"
+                placeholder="الرمز السري"
+                required
+              />
+              <ion-icon
+                name="lock-closed-outline"
+                class="icon"
+                id="reg-pass-icon"
+                onclick="myRegPassword()"
+              ></ion-icon>
+            </div>
+            <div class="remember-me">
+              <input type="checkbox" id="remember-me-check" />
+              <label for="remember-me-check"> تذكرني</label>
+            </div>
+            <div class="input-box">
+              <button type="submit" class="inputs submit-btn">
+                <span>اشتراك</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+          <!-- <div class="social-login">
+              <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-google" class="social-login-icon"></ion-icon></a>
+                  
+              </div>
+              <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-facebook" class="social-login-icon"></ion-icon></a>
+                  
+              </div>
+              <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-twitter" class="social-login-icon"></ion-icon></a>
+                  
+              </div>
+              <div class="social-login-box">
+                <a href="#"><ion-icon name="logo-github" class="social-login-icon"></ion-icon></a>
+                  
+              </div>           
+            </div> -->
+          <div class="lang">
+            <a aria-label="loginEN" href="loginEN.html"><span>English</span></a>
+            <a aria-label="loginAR" href="loginAR.html"><span>العربية</span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
